@@ -30,11 +30,12 @@ public class LearnAPI : MonoBehaviour
          //需要先給予欄位存放實體物件
         print("物件A座標:" + TransformA.position); //unity 內部拉取欄位
        
-        TransformA.position =  new Vector3(-2,0,0);//character postiion
+        TransformA.position = new Vector3(-2,0,0);//character postiion
         
         print("相機深度:" + C.depth);
 
-        Music.mute = true;
+        //Music.mute = true;
+        Music.Stop();
     }
 
     private void Update() {

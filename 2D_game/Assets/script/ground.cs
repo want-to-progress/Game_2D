@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ground : MonoBehaviour
 {
-  public float speed = 10; //moving ground speed
+  public float speed = 8; //moving ground speed
   private float init_pos_x;
   //want to control the position
   public Transform floor;
@@ -23,8 +23,8 @@ public class ground : MonoBehaviour
   /// 確認地板範圍
   /// </summary>
   private void check_ground_region(){
-    if(floor.position.x < init_pos_x - 100) 
-      floor.Translate(100*Time.deltaTime,0,0); //if run out of ground
+    //if(floor.position.x < init_pos_x - 100) 
+      //floor.Translate(100,0,0); //if run out of ground
   }
 
   /// <summary>
