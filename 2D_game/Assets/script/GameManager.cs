@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject pipe;
     private void Start() {
         //InvokeRepeating(funct_name,start time, 隔多久再跑一次);
-        InvokeRepeating("Generate_pipe",0,1.5f);
+        InvokeRepeating("Generate_pipe",0,1.3f);
     }
 
     ///<summary>
@@ -36,13 +36,13 @@ public class GameManager : MonoBehaviour
     ///生成水管
     ///</summary>
     private void Generate_pipe(){
-        print("生水管~~");
+        //print("生水管~~");
         //生成(物件)
         //Object.Instantiate(pipe);
         
         //生成(物件,座標、角度)
         //區域欄位 不需public
-        Vector3 pos = new Vector3(0,Random.Range(-0.5f,2),0);
+        Vector3 pos = new Vector3(0,Random.Range(-0.5f,2.5f),0);
         Object.Instantiate(pipe,pos,Quaternion.identity);
     }
 

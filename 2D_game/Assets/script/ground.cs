@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ground : MonoBehaviour
 {
-  public float speed = 8; //moving ground speed
+  public float speed = 3; //moving ground speed
   private float init_pos_x;
   //want to control the position
   public Transform floor;
