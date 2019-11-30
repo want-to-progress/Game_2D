@@ -154,6 +154,7 @@ MonoBehaviour:
   pipe: {fileID: 3192169268275797048, guid: 644fd739cdf0fbd468df018b8c461cb7, type: 3}
   showRank: {fileID: 805936004}
   score: {fileID: 1652126231}
+  Highscore: {fileID: 1801195938}
 --- !u!4 &326110330
 Transform:
   m_ObjectHideFlags: 0
@@ -249,7 +250,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 489160262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 326110329}
+        m_MethodName: quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &489160262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,8 +531,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872872196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -1.295, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalPosition: {x: 0.08, y: -0.872, z: 0}
+  m_LocalScale: {x: 2.8301501, y: 2.8301501, z: 2.8301501}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1614,7 +1626,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1700723859}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 326110329}
+        m_MethodName: replay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1700723859
 MonoBehaviour:
   m_ObjectHideFlags: 0

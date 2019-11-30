@@ -8,7 +8,7 @@ public class charobj : MonoBehaviour
     [Header("跳躍高度"),Range(0,500)]
     public int  height = 300;
     [Header("是否活著")]
-    public bool alive = true; 
+    public bool alive = true;
     [Header("剛體")]
     public Rigidbody2D character;
     [Header("旋轉角度"), Range(0, 20)]
@@ -31,6 +31,7 @@ public class charobj : MonoBehaviour
 
     private void Start() {
         //print(character.position);
+        alive = true;
     }
 
     //固定幀數
@@ -88,7 +89,7 @@ public class charobj : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "加分判定")
+        if (collision.gameObject.name == "加分判定" && alive) //活著才加分
         {
             gm.AddScore();
             aud.PlayOneShot(add, 1.5f);
